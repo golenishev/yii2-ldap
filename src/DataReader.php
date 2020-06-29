@@ -276,7 +276,6 @@ class DataReader extends BaseObject implements Iterator, Countable
             $this->_row = null;
             return;
         }
-        next($this->entries);
         $nextEntry  = current($this->entries);
         $this->_row = $nextEntry['resource'];
         $this->_index++;
